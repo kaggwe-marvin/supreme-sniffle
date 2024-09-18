@@ -1,9 +1,9 @@
 {
   "name": "server",
-  "module": "server/app.ts",
+  "module": "server/index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun server/app.ts",
+    "start": "bun server/index.ts",
     "dev": "bun --watch server/index.ts"
   },
   "devDependencies": {
