@@ -13,5 +13,8 @@ const apiRoutes = app.basePath("/api").route("/expenses", expensesRoute)
 app.get('*', serveStatic({ root: './frontend/dist'}))
 app.get('*', serveStatic({ root: './frontend/dist/index.html'}))
 
-export default app;
+export default { 
+    port: 3000, 
+    fetch: app.fetch, 
+  } 
 export type ApiRoutes = typeof apiRoutes
